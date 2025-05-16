@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.post("/request", async (req, res) => {
   if (req.body.url && req.body.request) {
-    await request(req.body.url, req.body.request, res);
+    await request(req.body.url, req.body.request);
     res.redirect("/");
   } else {
     res.redirect("/");

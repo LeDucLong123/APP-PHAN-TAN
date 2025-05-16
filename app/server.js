@@ -9,7 +9,12 @@ const NAME = process.env.NAME || "server-name";
 
 app.get("/", (req, res) => {
   res.send(
-    `${NAME} is running on port ${PORT} - Write on http://${process.env.INFLUXDB}:${process.env.INFLUXDB_PORT}`
+    `
+      <title>App Server</title>
+      <h1>Chào Bạn!</h1>
+      ${NAME} is running on port ${PORT} - 
+      Write on http://${process.env.INFLUXDB}:${process.env.INFLUXDB_PORT}
+    `
   );
 });
 
