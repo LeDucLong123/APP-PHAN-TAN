@@ -1,7 +1,10 @@
 const express = require("express");
 const { readAllWebRequests } = require("./query");
+const cors = require("cors");
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 app.get("/api/data", async (req, res) => {
 
