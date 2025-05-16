@@ -2,7 +2,7 @@ const express = require("express");
 const { readAllWebRequests } = require("./query");
 const cors = require("cors");
 const app = express();
-const port = 3000;
+const port = 3004;
 
 app.use(cors());
 
@@ -28,7 +28,7 @@ app.get("/api/data", async (req, res) => {
     request_count: count,
   }));
 
-  res.send(result);
+  res.json(result);
 });
 
 app.get("api/json", async (req, res) => {

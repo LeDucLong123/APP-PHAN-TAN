@@ -6,15 +6,6 @@ app.use(requestLogger);
 
 const PORT = process.env.PORT || "3000";
 const NAME = process.env.NAME || "server-name";
-// app.get("/", (req, res) => {
-//   console.log("/-----");
-//   res.send("Hello World! 123");
-// });
-
-// app.get("/test", (req, res) => {
-//   console.log("/test");
-//   setTimeout(() => res.send("Delayed"), 500);
-// });
 
 app.get("/", (req, res) => {
   res.send(
