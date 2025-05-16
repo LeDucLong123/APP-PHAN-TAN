@@ -101,3 +101,36 @@ services:
       - app-1
       - app-2
       - app-3
+  api:
+    container_name: api
+    build: ./api
+    environment:
+      - PORT=3004
+    ports:
+      - "3004:3004"
+    depends_on:
+      - nginx
+    volumes:
+      - ./api:/app
+  view:
+    container_name: view
+    build: ./view
+    environment:
+      - PORT=3005
+    ports:
+      - "3005:3005"
+    depends_on:
+      - nginx
+    volumes:
+      - ./view:/app
+  request:
+    container_name: request
+    build: ./request
+    environment:
+      - PORT=3006
+    ports:
+      - "3006:3006"
+    depends_on:
+      - nginx
+    volumes:
+      - ./request:/app

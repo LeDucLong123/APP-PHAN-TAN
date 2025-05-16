@@ -2,7 +2,7 @@ const express = require("express");
 const { readAllWebRequests } = require("./query");
 const cors = require("cors");
 const app = express();
-const PORT = 3004;
+const PORT = process.env.PORT;
 
 app.use(cors());
 

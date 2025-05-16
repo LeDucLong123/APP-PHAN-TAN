@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = 3005;
+const PORT = process.env.PORT;
 
 // Không cần set view engine
 app.use(express.static(__dirname)); // Để phục vụ file tĩnh nếu cần
