@@ -7,8 +7,8 @@ services:
       - "8087:8087"
     command: influxd --http-bind-address=:8087
     volumes:
-      - .db/influxdb-1/data:/var/lib/influxdb2
-      - .db/influxdb-1/config:/etc/influxdb2
+      - ./db/influxdb-1/data:/var/lib/influxdb2
+      - ./db/influxdb-1/config:/etc/influxdb2
     environment:
       - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_USERNAME=leduclong
@@ -23,8 +23,8 @@ services:
       - "8088:8088"
     command: influxd --http-bind-address=:8088
     volumes:
-      - .db/influxdb-2/data:/var/lib/influxdb2
-      - .db/influxdb-2/config:/etc/influxdb2
+      - ./db/influxdb-2/data:/var/lib/influxdb2
+      - ./db/influxdb-2/config:/etc/influxdb2
     environment:
       - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_USERNAME=leduclong
@@ -39,8 +39,8 @@ services:
       - "8089:8089"
     command: influxd --http-bind-address=:8089
     volumes:
-      - .db/influxdb-3/data:/var/lib/influxdb2
-      - .db/influxdb-3/config:/etc/influxdb2
+      - ./db/influxdb-3/data:/var/lib/influxdb2
+      - ./db/influxdb-3/config:/etc/influxdb2
     environment:
       - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_USERNAME=leduclong
