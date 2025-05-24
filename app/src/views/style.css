@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  border: 0;
+}
+button {
+  border: 0;
+}
+.header {
+  color: #dc9a38;
+  background-color: #dc9a38;
+}
+
+.header .left-header {
+  color: white;
+  margin-left: 70px;
+}
+
+.header .right-header a {
+  color: white;
+}
+.header .right-header a:last-of-type {
+  margin-right: 70px;
+}
+.header .right-header > a:not(:last-of-type) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(245, 245, 245, 0.233);
+  margin-right: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+}
+.header1 img {
+  width: 200px;
+}
+.header1 a {
+  color: #704713;
+  margin: 0 20px;
+  font-size: 25px;
+}
+.align-header1 {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.chao_mung .chao_mung-head {
+  text-align: center;
+  color: #704713;
+  font-size: 45px;
+}
+.chao_mung .intro img {
+  width: 200px;
+  border-radius: 100px;
+  border: 1px solid #dc9a38;
+}
+.chao_mung .intro {
+  display: flex;
+  justify-content: space-evenly;
+}
+.chao_mung .intro figcaption {
+  font-size: 20px;
+  text-align: center;
+}
+.chao_mung {
+  margin: 50px 0;
+}
+
+.gift figure {
+  width: 19vw;
+  background-color: white;
+  border-radius: 10px;
+}
+.gift img {
+  width: 100%;
+}
+.gift .price {
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+}
+.gift .price .pc {
+  text-decoration: line-through;
+  margin-right: 2%;
+  color: #666;
+}
+.gift .gift_head {
+  color: white;
+  font-size: 30px;
+}
+.gift {
+  width: 88vw;
+}
+.gift .gift_price {
+  display: flex;
+  justify-content: space-between;
+}
+.align_gift {
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.gift .gift_head {
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 40px;
+}
+.gift figcaption {
+  text-align: center;
+  font-size: 20px;
+  padding: 30px 0;
+}
+.gift button {
+  text-align: center;
+  font-size: 20px;
+  background-color: #dc9a38;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  color: white;
+}
+
+.bang figure {
+  width: 19vw;
+  padding-bottom: 15px;
+}
+.bang img {
+  width: 100%;
+}
+
+.bang figcaption {
+  text-align: center;
+  padding: 30px 0;
+  text-align: center;
+  line-height: 30px;
+}
+.bang button {
+  text-align: center;
+  font-size: 20px;
+  background-color: #dc9a38;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  color: white;
+}
+.bang figcaption span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bang .gia {
+  text-align: center;
+  background-color: #dc9a38;
+  margin-bottom: 4px;
+  padding: 15px;
+  color: white;
+  font-size: 30px;
+}
+.bang {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+}
+.bang-gia {
+  width: 90vw;
+}
+.bang-gia .line1 {
+  color: #704713;
+  font-size: 45px;
+  text-align: center;
+  margin: 15px 0;
+}
+.bang-gia .line2 {
+  text-align: center;
+  margin: 15px 0;
+}
+.align_bang-gia {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.footer {
+  background-color: rgb(38, 38, 38);
+  display: flex;
+  color: white;
+  width: 90vw;
+  justify-content: space-between;
+}
+.footer button {
+  text-align: center;
+  font-size: 20px;
+  background-color: #dc9a38;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.footer section {
+  width: 30vw;
+  padding: 0 20px;
+}
+.footer .sec1 img {
+  width: 150px;
+}
+.footer ul li {
+  margin: 10px 0;
+}
+.footer .head {
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 20px;
+}
+.align_footer {
+  background-color: rgb(38, 38, 38);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.footer p {
+  line-height: 30px;
+}
+.foot_bottom {
+  width: 90vw;
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.align_foot {
+  background-color: #dc9a38;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: relative;
+}
+.align_foot a {
+  position: absolute;
+  background-color: #dc9a38;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+  color: white;
+  top: -10px;
+  right: 25px;
+}
+
+.align-header1 a:hover {
+  border: 2px solid #dc9a38;
+  padding: 10px;
+  border-radius: 50px;
+  color: #dc9a38;
+}
+.bang-gia figure:hover {
+  border: 2px solid #dc9a38;
+}

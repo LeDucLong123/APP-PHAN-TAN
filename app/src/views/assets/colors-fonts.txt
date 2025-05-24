@@ -1,0 +1,6 @@
+màu cam: #dc9a38
+màu nâu: #704713
+màu đỏ: #ed1c24
+màu xám nền: #666
+màu xám đen: rgb(38, 38, 38)
+font-family: "Roboto", sans-serif
