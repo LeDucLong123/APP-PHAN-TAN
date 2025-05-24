@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.post("/request", async (req, res) => {
   if (req.body.request) {
-    await request(`http://nginx:80/`, req.body.request);
+    await request(req.body.host, req.body.request);
     res.redirect("/");
   } else {
     res.redirect("/");
